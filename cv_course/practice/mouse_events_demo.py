@@ -5,6 +5,7 @@ drawing = False
 mode = True  # True for rectangle, False for circle
 
 def draw_shape(event,x,y,flags,param):
+    print('inside a callback')
     global drawing, mode
     
     if event == cv.EVENT_LBUTTONDOWN:
